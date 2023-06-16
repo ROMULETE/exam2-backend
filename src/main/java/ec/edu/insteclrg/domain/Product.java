@@ -20,7 +20,7 @@ public class Product {
 	private Long id;
 
 	@Column(unique = true, nullable = false)
-	private String name;
+	private String nombre;
 
 	@ManyToOne(cascade = CascadeType.ALL, optional = false)
 	@JoinColumn(name = "category_id")
